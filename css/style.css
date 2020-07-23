@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,900&display=swap');
+
+*{
+  box-sizing: border-box; margin: 0; padding: 0;}
+
+p{margin: 12px 0; font-family: candara; font-size: 1em;}
+
+h1, h2 {padding: 16px 0; font-family: Piedra}
+
+
+ul{padding-left: 40px; padding-bottom: 24px}
+
+.container {max-width: 1280px; margin: 0 auto; padding: 10px } 
+
+
+.cover{ background-color: rgba(0, 0, 0, 0.212); height: 200px;}
+.parallax > .cover > .container {display: flex; justify-content: center; align-items: center; height: 200px;}
+
+
+/*inicio site topo - redes sociais*/
+.topo{
+ /* background-color: black;*/
+  text-align: right;
+padding-top: 20px;
+  }
+
+/*formatação topo rede social*/
+.fa-facebook-f, .fa-instagram, .fa-pinterest{
+  color: white;
+}
+
+/*logo dentro cabeçalho  */ 
+.logo{
+  /*background-color: black;*/
+}
+
+/*Header*/
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*background-color: black;*/
+}
+
+/*configuação do menu*/
+.menu a{
+  font-family: Vidaloka;
+  color: white;
+  text-decoration: none;
+  padding-left: 22px;
+}
+
+
+/*Aplicar estilo no menu quando passar o mouse*/
+.menu a:hover{
+  color: #C59D5F;
+}
+
+/*colocar cor na class actvic*/
+.menu .active{
+  color: #C59D5F;
+}
+
+/*Colocar bolinha antes da palavra*/
+.menu a.active::before { 
+  content: "•"; 
+  color: white; 
+} 
+
+/*Colocar bolinha depois da palavra*/
+.menu a.active::after{ 
+  content: " •"; 
+  color: white; 
+} 
+
+::selection {
+    background:rgb(207, 207, 207);
+}
+
+/*
+a.act-link:before , a.act-link:after {
+	-webkit-transform: scale(1.0);
+	-moz-transform:scale(1.0);
+	transform: scale(1.0);
+	opacity:1;
+}*/
+
+/*imagem de fundo do titulo*/
+.parallax{
+  background-image: url('http://lambert.kwst.net/site/images/bg/14.jpg');
+  height: 550px;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+
+/*overlay = uma coisa por cima da outra*/
+.overlay{
+ background-color: rgba(0, 0, 0, 0.397);
+ height: 550px;
+ width:100%;  
+}
+
+
+/*Fazer serrilhado na imagem*/
+.triangle-decor{
+top: -7px;
+position: relative
+}
+
+.titulo-bg {
+ /* background-color: aquamarine;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 75%;
+  text-align: center;
+
+}
+
+.titulo-bg h2{
+  color: white;
+  font-family: "Source Sans Pro:ital";
+  font-size:40px;
+  letter-spacing: 3px;
+  /* padding-bottom: 20px; */
+
+}
+
+.titulo-bg h3{
+  color: #C59D5F;
+  font-family: Playball;
+   font-size:20px;
+   font-weight:200;
+}
+
+/*Roda pé da pagina*/
+.rodape .container{
+  font-family: Cormorant;
+  color:black;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+/* ===================================================== */
+/* inicio Pagina Galeria */
+
+/* deixa as imagens em grades */
+.galeria{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)) ;
+  gap:10px;
+}
+
+/* ajustar as imagens dentro da classe "imagem" deixar responsivas */
+.img-item img{
+  max-width: 100%;
+  display: block;
+  font-size: 0;
+}
+
+/* Efeito de quando passar o mouse a imagem ampliar um pouco */
+.img-item:hover{
+transition: transform 0.5s ease;
+-moz-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+* Form de Pedidos */
+
+/* espaço entre os elementos */
+#form-pedidos div + div {
+  margin-top: 1em;
+}
+
+#form-pedidos label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+  font: 21px Playball ;
+  margin-right: 5px;
+  
+}
+
+#form-pedidos input, #form-pedidos textarea {
+  font: 1em tahoma;
+  width: 80%;
+  border: 1px solid #999;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+#form-pedidos input:focus, #form-pedidos textarea:focus {
+  border-color: #F00;
+  outline: none;
+}
+
+#form-pedidos textarea {
+  vertical-align: top;
+  height: 5em;
+
+}
+
+/* Button */
+#form-pedidos button{
+  padding: 12px 32px;
+  background-color: #1fdf68;
+  color: #37704d;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  margin-left: 100px;
+}
+
+/* Button Clicado*/
+#form-pedidos button:active {
+  background-color: #65d36b;
+}
+
+/* Button Ao passar o mouse*/
+#form-pedidos button:hover {
+  background-color: #24f52f;
+}
+
+
+
+
+
+
